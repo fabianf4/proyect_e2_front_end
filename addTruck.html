@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Truck</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+            <div class="mb-3">
+                <label for="plate" class="form-label">Plate</label>
+                <input type="text" class="form-control" id="plate" placeholder="ABC-123">
+            </div>
+            <div class="mb-3">
+                <label for="brand" class="form-label">Brand</label>
+                <input type="text" class="form-control" id="brand" placeholder="Honda">
+            </div>
+            <div class="mb-3">
+                <label for="model" class="form-label">model</label>
+                <input type="date" class="form-control" id="model">
+            </div>
+            <div class="mb-3">
+                <label for="weight" class="form-label">Weight</label>
+                <input type="number" class="form-control" id="weight">
+            </div>
+            <button type="submit" id="btn" class="btn btn-primary">Send</button>
+
+        <br><br>
+        <div id="response"></div>
+    </div>
+
+
+</body>
+<script src="js/scriptPostTruck.js"></script>
+</html>
