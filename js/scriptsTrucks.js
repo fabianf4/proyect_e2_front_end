@@ -9,7 +9,7 @@ let getTable = async ()=> {
             <td>${data.brand}</td>
             <td>${data.model.split('T')[0]}</td>
             <td>${data.weight}</td>
-            <td>${buttonPencil(data.plate)}</td>
+            <td>${button(data.plate)}</td>
         </tr>
         `
     })
@@ -69,7 +69,7 @@ async function deletee(plate){
     getTable()
 }
 
-let buttonPencil = (plate) => {
+let button = (plate) => {
     return `
     <a class="btn btn-success" onclick="update('${plate}')" href="#update">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
