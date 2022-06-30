@@ -2,6 +2,8 @@ let getTable = async ()=> {
     let pet = await fetch("http://localhost:3000/truck/")
     let info = await pet.json()
 
+    console.log(info.data)
+
     let bodyTable=""
     info.data.forEach((data)=>{
         bodyTable +=`<tr>
@@ -9,6 +11,7 @@ let getTable = async ()=> {
             <td>${data.brand}</td>
             <td>${data.model.split('T')[0]}</td>
             <td>${data.weight}</td>
+            <td>${data.driver?data.driver:''}</td>
             <td>${button(data.plate)}</td>
         </tr>
         `
