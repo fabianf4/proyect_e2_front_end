@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Info</h1>
+
+        <div id="response"></div>
+
+        <div class="ocultar" id="update">
+
+            <div class="mb-3">
+                <label for="identyCard" class="form-label">Identy Card</label>
+                <input type="text" class="form-control" id="identyCard" placeholder="1156895" pattern="[a-z]{1,3}"
+                       required readonly="readonly">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Juan">
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Perez">
+            </div>
+            <div class="mb-3">
+                <label for="birth" class="form-label">Birth</label>
+                <input type="date" class="form-control" id="birth">
+            </div>
+            <div class="mb-3">
+                <label for="cellphone" class="form-label">Cellphone</label>
+                <input type="number" class="form-control" id="cellphone" placeholder="3112568126">
+            </div>
+            <button type="submit" id="btn" class="btn btn-primary">Update</button>
+
+            <br><br>
+        </div>
+
+        <h1>Drivers</h1>
+
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Identy Card</th>
+                <th scope="col">Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Birth</th>
+                <th scope="col">Cellphone</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script src="js/scriptsDrivers.js"></script>
+</html>

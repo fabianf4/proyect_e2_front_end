@@ -21,4 +21,5 @@ const addTruck = async ()=>{
     res.className=result.result?'alert alert-success':'alert alert-danger'
 }
 
+//Evento boton
 document.getElementById('btn').addEventListener('click',addTruck)

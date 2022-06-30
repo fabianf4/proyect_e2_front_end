@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Add driver to truck</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mb-3">
+            <label for="identyCard" class="form-label">Identy Card</label>
+            <input type="text"  class="form-control" id="identyCard"  placeholder="1156895" pattern="[a-z]{1,3}" required>
+        </div>
+        <div class="mb-3">
+            <label for="plate" class="form-label">Plate</label>
+            <input type="text" class="form-control" id="plate" placeholder="ABC-123">
+        </div>
+        <button type="submit" id="btn" class="btn btn-primary">Send</button>
+
+    <br><br>
+    <div id="response"></div>
+</div>
+</body>
+<script src="js/scriptPostDriverToTruck.js"></script>
+</html>
